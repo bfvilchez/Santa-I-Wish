@@ -56,15 +56,55 @@
 		DDDA5CF8272B5E42003CE2B3 /* Santa I Wish */ = {
 			isa = PBXGroup;
 			children = (
-				DDDA5CF9272B5E42003CE2B3 /* AppDelegate.swift */,
-				DDDA5CFB272B5E42003CE2B3 /* SceneDelegate.swift */,
-				DDDA5CFD272B5E42003CE2B3 /* ViewController.swift */,
-				DDDA5CFF272B5E42003CE2B3 /* Main.storyboard */,
+				DDDA5D11272B5EAC003CE2B3 /* Storyboard */,
+				DDDA5D10272B5E95003CE2B3 /* Resources */,
+				DDDA5D0F272B5E89003CE2B3 /* Model */,
+				DDDA5D0E272B5E82003CE2B3 /* View Controller */,
+				DDDA5D0D272B5E7B003CE2B3 /* API */,
 				DDDA5D02272B5E43003CE2B3 /* Assets.xcassets */,
-				DDDA5D04272B5E43003CE2B3 /* LaunchScreen.storyboard */,
 				DDDA5D07272B5E43003CE2B3 /* Info.plist */,
 			);
 			path = "Santa I Wish";
+			sourceTree = "<group>";
+		};
+		DDDA5D0D272B5E7B003CE2B3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DDDA5D0E272B5E82003CE2B3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDDA5CFD272B5E42003CE2B3 /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		DDDA5D0F272B5E89003CE2B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDDA5D10272B5E95003CE2B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDDA5CF9272B5E42003CE2B3 /* AppDelegate.swift */,
+				DDDA5CFB272B5E42003CE2B3 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDDA5D11272B5EAC003CE2B3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DDDA5CFF272B5E42003CE2B3 /* Main.storyboard */,
+				DDDA5D04272B5E43003CE2B3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
