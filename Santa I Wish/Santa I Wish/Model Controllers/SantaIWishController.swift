@@ -8,10 +8,8 @@
 
 import Foundation
 import CoreData
-import FirebaseAuth
-import FirebaseFirestore
 import UIKit
-import Firebase
+
 
  @objc class SantaIWishController: NSObject {
     

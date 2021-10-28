@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-import FirebaseAuth
 
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, NSFetchedResultsControllerDelegate {
 

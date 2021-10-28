@@ -6,9 +6,6 @@
 //  Copyright © 2020 Lambda School. All rights reserved.
 
 import UIKit
-import Firebase
-import FirebaseAuth
-import FirebaseFirestore
 
 class LoginViewController: UIViewController {
     

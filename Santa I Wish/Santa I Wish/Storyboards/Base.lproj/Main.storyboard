@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SeI-TI-uQl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SeI-TI-uQl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,93 +17,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7-77044_christmas-santa-clipart-5-merry-christmas-png-clipart" translatesAutoresizingMaskIntoConstraints="NO" id="YbE-d6-pxQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7-77044_christmas-santa-clipart-5-merry-christmas-png-clipart" translatesAutoresizingMaskIntoConstraints="NO" id="YbE-d6-pxQ">
                                 <rect key="frame" x="20" y="97.5" width="374" height="353"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="353" id="Nei-UZ-xYu"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle -1" translatesAutoresizingMaskIntoConstraints="NO" id="13k-YB-bYL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle -1" translatesAutoresizingMaskIntoConstraints="NO" id="13k-YB-bYL">
                                 <rect key="frame" x="20" y="516" width="374" height="123"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="123" id="3jt-OQ-yP6"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEK-9M-cfc">
-                                <rect key="frame" x="57" y="569" width="281" height="17"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEK-9M-cfc">
+                                <rect key="frame" x="57" y="568.5" width="281" height="18.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle -1" translatesAutoresizingMaskIntoConstraints="NO" id="i2p-aR-ue6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle -1" translatesAutoresizingMaskIntoConstraints="NO" id="i2p-aR-ue6">
                                 <rect key="frame" x="20" y="579" width="374" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="gxy-bs-93V"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSr-JN-zYd">
-                                <rect key="frame" x="57" y="626" width="286" height="32"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSr-JN-zYd">
+                                <rect key="frame" x="57" y="627" width="286" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd3-Ur-k3A">
-                                <rect key="frame" x="102" y="666" width="191" height="107"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd3-Ur-k3A">
+                                <rect key="frame" x="102" y="701" width="191" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Login" backgroundImage="Rectangle -3">
                                     <color key="titleColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="zaK-D9-sm4" eventType="touchUpInside" id="q0a-Di-dfd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lda-gm-lSB">
-                                <rect key="frame" x="102" y="736" width="191" height="107"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Signup" backgroundImage="Rectangle -3">
-                                    <color key="titleColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="53I-eR-LZS" kind="show" identifier="SignUpSegue" id="bPq-qc-r8k"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Santa I Wish!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adY-b0-OTz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Santa I Wish!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adY-b0-OTz">
                                 <rect key="frame" x="20" y="468.5" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lda-gm-lSB">
+                                <rect key="frame" x="105" y="755" width="191" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Signup">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" title="Signup">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="53I-eR-LZS" kind="show" identifier="SignUpSegue" id="bPq-qc-r8k"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="13k-YB-bYL" firstAttribute="leading" secondItem="adY-b0-OTz" secondAttribute="leading" id="474-Bs-bnk"/>
-                            <constraint firstItem="YbE-d6-pxQ" firstAttribute="leading" secondItem="adY-b0-OTz" secondAttribute="leading" id="7M1-w5-ab5"/>
-                            <constraint firstItem="pSr-JN-zYd" firstAttribute="leading" secondItem="YT9-9C-6a7" secondAttribute="leading" constant="57" id="AmM-Hz-DgW"/>
-                            <constraint firstItem="13k-YB-bYL" firstAttribute="leading" secondItem="i2p-aR-ue6" secondAttribute="leading" id="FYl-qe-x9D"/>
-                            <constraint firstItem="SEK-9M-cfc" firstAttribute="leading" secondItem="YT9-9C-6a7" secondAttribute="leading" constant="57" id="HCK-E4-4aA"/>
-                            <constraint firstItem="i2p-aR-ue6" firstAttribute="top" secondItem="adY-b0-OTz" secondAttribute="bottom" constant="50.5" id="HrC-gm-9Kv"/>
-                            <constraint firstItem="YT9-9C-6a7" firstAttribute="trailing" secondItem="pSr-JN-zYd" secondAttribute="trailing" constant="71" id="I6I-zx-riA"/>
-                            <constraint firstItem="Sd3-Ur-k3A" firstAttribute="top" secondItem="13k-YB-bYL" secondAttribute="bottom" constant="27" id="LXY-fK-eHv"/>
-                            <constraint firstItem="Sd3-Ur-k3A" firstAttribute="leading" secondItem="YT9-9C-6a7" secondAttribute="leading" constant="102" id="Mu0-he-URf"/>
-                            <constraint firstItem="adY-b0-OTz" firstAttribute="top" secondItem="YbE-d6-pxQ" secondAttribute="bottom" constant="18" id="VAk-b4-3A7"/>
-                            <constraint firstItem="Sd3-Ur-k3A" firstAttribute="top" secondItem="pSr-JN-zYd" secondAttribute="bottom" constant="8" id="VaV-J6-q82"/>
-                            <constraint firstItem="13k-YB-bYL" firstAttribute="leading" secondItem="hyG-Qu-E3l" secondAttribute="leadingMargin" id="WMd-6W-muj"/>
-                            <constraint firstItem="lda-gm-lSB" firstAttribute="leading" secondItem="Sd3-Ur-k3A" secondAttribute="leading" id="ZMM-ac-6bF"/>
-                            <constraint firstItem="pSr-JN-zYd" firstAttribute="top" secondItem="SEK-9M-cfc" secondAttribute="bottom" constant="40" id="aMS-R0-ZHo"/>
-                            <constraint firstAttribute="bottom" secondItem="i2p-aR-ue6" secondAttribute="bottom" constant="189" id="c1C-aK-zWz"/>
-                            <constraint firstItem="YT9-9C-6a7" firstAttribute="bottom" secondItem="Sd3-Ur-k3A" secondAttribute="bottom" constant="89" id="csk-86-DxZ"/>
-                            <constraint firstItem="lda-gm-lSB" firstAttribute="trailing" secondItem="Sd3-Ur-k3A" secondAttribute="trailing" id="dQY-M7-fdT"/>
-                            <constraint firstItem="YT9-9C-6a7" firstAttribute="bottom" secondItem="lda-gm-lSB" secondAttribute="bottom" constant="19" id="dZ7-M6-u7U"/>
-                            <constraint firstItem="YT9-9C-6a7" firstAttribute="trailing" secondItem="SEK-9M-cfc" secondAttribute="trailing" constant="76" id="g0o-sX-mSy"/>
-                            <constraint firstItem="13k-YB-bYL" firstAttribute="trailing" secondItem="i2p-aR-ue6" secondAttribute="trailing" id="hvW-Zu-VpQ"/>
-                            <constraint firstItem="Sd3-Ur-k3A" firstAttribute="centerX" secondItem="SEK-9M-cfc" secondAttribute="centerX" id="i1D-JW-edR"/>
-                            <constraint firstItem="lda-gm-lSB" firstAttribute="top" secondItem="i2p-aR-ue6" secondAttribute="bottom" constant="29" id="iRC-fp-PlS"/>
-                            <constraint firstItem="YT9-9C-6a7" firstAttribute="trailing" secondItem="Sd3-Ur-k3A" secondAttribute="trailing" constant="121" id="lEA-Rw-fST"/>
-                            <constraint firstItem="YbE-d6-pxQ" firstAttribute="trailing" secondItem="adY-b0-OTz" secondAttribute="trailing" id="ryj-av-vPj"/>
-                            <constraint firstAttribute="bottom" secondItem="13k-YB-bYL" secondAttribute="bottom" constant="257" id="vdg-Wn-hq3"/>
-                            <constraint firstItem="13k-YB-bYL" firstAttribute="trailing" secondItem="hyG-Qu-E3l" secondAttribute="trailingMargin" id="whp-iW-bSw"/>
-                            <constraint firstItem="13k-YB-bYL" firstAttribute="trailing" secondItem="adY-b0-OTz" secondAttribute="trailing" id="xwX-Fb-gm6"/>
-                            <constraint firstItem="13k-YB-bYL" firstAttribute="centerY" secondItem="SEK-9M-cfc" secondAttribute="centerY" id="y7n-Y7-OfN"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YT9-9C-6a7"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="3ss-nZ-J3q"/>
                     <connections>
@@ -152,9 +132,9 @@ We'll send it to the Northpole!</string>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-Fb-C56">
                                         <rect key="frame" x="0.0" y="196" width="374" height="354.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -180,7 +160,8 @@ We'll send it to the Northpole!</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Zb0-WY-RX5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iO9-p2-rcp" firstAttribute="top" secondItem="Tha-gR-apf" secondAttribute="bottom" constant="20" id="78r-A0-882"/>
                             <constraint firstItem="Zb0-WY-RX5" firstAttribute="trailing" secondItem="Tha-gR-apf" secondAttribute="trailing" constant="20" id="8r8-G7-mnO"/>
@@ -193,7 +174,6 @@ We'll send it to the Northpole!</string>
                             <constraint firstItem="Zb0-WY-RX5" firstAttribute="trailing" secondItem="iO9-p2-rcp" secondAttribute="trailing" constant="125" id="rGU-ro-mv5"/>
                             <constraint firstItem="Tha-gR-apf" firstAttribute="top" secondItem="JRm-Ek-5ek" secondAttribute="bottom" constant="15" id="rQX-SA-Gfc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Zb0-WY-RX5"/>
                     </view>
                     <navigationItem key="navigationItem" id="bkr-MR-tyA"/>
                     <connections>
@@ -212,7 +192,7 @@ We'll send it to the Northpole!</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="A2E-aG-0yM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="wSp-cH-E0s">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -239,7 +219,7 @@ We'll send it to the Northpole!</string>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="RR2-Zn-TJl" firstAttribute="leading" secondItem="cr8-G5-SN0" secondAttribute="leading" id="0pJ-vg-4KG"/>
                                 <constraint firstAttribute="bottom" secondItem="RR2-Zn-TJl" secondAttribute="bottom" constant="25" id="6tM-NC-vBK"/>
@@ -250,13 +230,13 @@ We'll send it to the Northpole!</string>
                             </constraints>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="mXG-va-s1V">
-                            <rect key="frame" x="0.0" y="175.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="186.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LetterCell" id="w6q-YL-U04">
-                                <rect key="frame" x="0.0" y="104" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="120.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w6q-YL-U04" id="KNr-jq-tLR">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -282,7 +262,7 @@ We'll send it to the Northpole!</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="C4k-w2-cNb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="1sd-RG-6Ut">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -305,7 +285,7 @@ We'll send it to the Northpole!</string>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="c4h-NI-lr8" firstAttribute="top" secondItem="PJd-us-bVG" secondAttribute="top" id="ToK-LO-jMv"/>
                                 <constraint firstItem="c4h-NI-lr8" firstAttribute="trailing" secondItem="1sd-RG-6Ut" secondAttribute="trailingMargin" id="UUk-Pb-lQk"/>
@@ -316,7 +296,7 @@ We'll send it to the Northpole!</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToyCell" id="o54-ji-Kko">
-                                <rect key="frame" x="0.0" y="102" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="118.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o54-ji-Kko" id="YCG-1i-UWN">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -359,16 +339,16 @@ We'll send it to the Northpole!</string>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ihf-6w-mxG">
                                 <rect key="frame" x="20" y="509.5" width="374" height="219"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ihf-6w-mxG" secondAttribute="height" multiplier="374:219" id="nKl-YE-CYh"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-23-NFG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-23-NFG">
                                 <rect key="frame" x="141" y="711" width="132" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="VyI-y8-jlk"/>
@@ -386,8 +366,8 @@ We'll send it to the Northpole!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic5-oU-mUD">
-                                <rect key="frame" x="246" y="105" width="148" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic5-oU-mUD">
+                                <rect key="frame" x="243" y="105" width="151" height="36"/>
                                 <color key="backgroundColor" red="0.1744748056" green="0.67586940529999995" blue="0.43863260749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="   Upload Image   ">
@@ -404,7 +384,8 @@ We'll send it to the Northpole!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Dce-gz-Iu6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Dce-gz-Iu6" firstAttribute="trailing" secondItem="Ic5-oU-mUD" secondAttribute="trailing" constant="20" id="7ZR-jp-w95"/>
                             <constraint firstItem="Dce-gz-Iu6" firstAttribute="trailing" secondItem="fSG-I1-dxX" secondAttribute="trailing" constant="20" id="MkL-m9-ewZ"/>
@@ -426,7 +407,6 @@ We'll send it to the Northpole!</string>
                             <constraint firstItem="Dce-gz-Iu6" firstAttribute="bottom" secondItem="Pbu-23-NFG" secondAttribute="bottom" constant="25" id="wi6-nY-oaP"/>
                             <constraint firstItem="Dce-gz-Iu6" firstAttribute="trailing" secondItem="f3M-C1-mzh" secondAttribute="trailing" constant="20" id="zji-c6-Nah"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Dce-gz-Iu6"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yra-Dc-4gS"/>
                     <connections>
@@ -536,7 +516,7 @@ We'll send it to the Northpole!</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="tXf-dZ-kD4" firstAttribute="centerX" secondItem="n6t-ve-Xxo" secondAttribute="centerX" id="0HA-FE-rek"/>
@@ -550,7 +530,7 @@ We'll send it to the Northpole!</string>
                                         <rect key="frame" x="215" y="16" width="179" height="157"/>
                                         <subviews>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Letters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jid-2b-zrn">
-                                                <rect key="frame" x="45" y="62" width="89.5" height="33.5"/>
+                                                <rect key="frame" x="44.5" y="62" width="90" height="33.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -583,6 +563,7 @@ We'll send it to the Northpole!</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Kff-T0-SS2"/>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="bJ8-Mo-7GH"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="M83-rg-Pmz" secondAttribute="bottom" constant="527" id="0sY-Zn-GbH"/>
@@ -595,7 +576,6 @@ We'll send it to the Northpole!</string>
                             <constraint firstItem="M83-rg-Pmz" firstAttribute="leading" secondItem="Erh-7K-q6f" secondAttribute="leading" id="uUE-gS-3L2"/>
                             <constraint firstItem="eK6-eV-PPF" firstAttribute="trailing" secondItem="M83-rg-Pmz" secondAttribute="trailing" id="yFL-Je-3G1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bJ8-Mo-7GH"/>
                     </view>
                     <navigationItem key="navigationItem" id="dJg-Bk-teu"/>
                     <connections>
@@ -637,7 +617,7 @@ We'll send it to the Northpole!</string>
                             </label>
                             <collectionView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-pF-M22">
                                 <rect key="frame" x="0.0" y="245" width="414" height="445"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OKe-pF-M22" secondAttribute="height" multiplier="414:445" id="OiC-WR-12C"/>
                                 </constraints>
@@ -745,7 +725,7 @@ We'll send it to the Northpole!</string>
                                     <segue destination="3ht-Td-BBY" kind="show" identifier="CreateChildProfile" id="k8s-oO-gfM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFj-T5-frF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFj-T5-frF">
                                 <rect key="frame" x="305" y="111" width="89" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="SignOut">
@@ -756,7 +736,8 @@ We'll send it to the Northpole!</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XlT-26-rY9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XlT-26-rY9" firstAttribute="trailing" secondItem="LFj-T5-frF" secondAttribute="trailing" constant="20" id="5wV-Gw-D1r"/>
                             <constraint firstItem="apj-H8-z09" firstAttribute="trailing" secondItem="OKe-pF-M22" secondAttribute="trailing" id="7I4-Cb-kw2"/>
@@ -772,7 +753,6 @@ We'll send it to the Northpole!</string>
                             <constraint firstItem="apj-H8-z09" firstAttribute="bottom" secondItem="XlT-26-rY9" secondAttribute="bottom" id="rXz-xS-VMT"/>
                             <constraint firstItem="OKe-pF-M22" firstAttribute="leading" secondItem="XlT-26-rY9" secondAttribute="leading" id="sF5-gx-0Lc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XlT-26-rY9"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="rvn-Dl-ogx"/>
@@ -817,7 +797,7 @@ We'll send it to the Northpole!</string>
                                 <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiQ-RM-g09">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiQ-RM-g09">
                                 <rect key="frame" x="92" y="779" width="230" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="K3G-Mi-hgD"/>
@@ -875,7 +855,8 @@ We'll send it to the Northpole!</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hs5-py-uzB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yLL-Dd-gRs" firstAttribute="top" secondItem="cjN-uM-GbZ" secondAttribute="bottom" constant="46" id="06k-HU-wRs"/>
                             <constraint firstItem="uBy-kN-Gnh" firstAttribute="top" secondItem="flz-QH-6gF" secondAttribute="bottom" constant="50" id="0Rd-kh-q2l"/>
@@ -917,7 +898,6 @@ We'll send it to the Northpole!</string>
                             <constraint firstItem="hs5-py-uzB" firstAttribute="trailing" secondItem="3Sp-Ml-nGw" secondAttribute="trailing" constant="60" id="ys6-fD-lRb"/>
                             <constraint firstItem="kQ9-ZV-x8p" firstAttribute="top" secondItem="hs5-py-uzB" secondAttribute="top" constant="27" id="yvx-lx-PxD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hs5-py-uzB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xve-gu-Iyl"/>
                     <connections>
@@ -929,7 +909,7 @@ We'll send it to the Northpole!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LpB-bJ-ios" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1898.5507246376812" y="107.8125"/>
+            <point key="canvasLocation" x="1730" y="108"/>
         </scene>
         <!--Add ChildOBJC View Controller-->
         <scene sceneID="U4U-uJ-tCD">
@@ -945,7 +925,7 @@ We'll send it to the Northpole!</string>
                                 <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeF-uY-9rN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeF-uY-9rN">
                                 <rect key="frame" x="92" y="606.5" width="230" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="WLI-RX-eQT"/>
@@ -994,7 +974,8 @@ We'll send it to the Northpole!</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hfb-jY-dpz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WwU-X5-nKN" firstAttribute="top" secondItem="gJc-rg-yKw" secondAttribute="bottom" constant="45" id="59k-iV-7c2"/>
                             <constraint firstItem="nf7-2u-lqA" firstAttribute="leading" secondItem="hfb-jY-dpz" secondAttribute="leading" constant="34" id="A3s-ov-eOR"/>
@@ -1019,7 +1000,6 @@ We'll send it to the Northpole!</string>
                             <constraint firstItem="hfb-jY-dpz" firstAttribute="trailing" secondItem="gJc-rg-yKw" secondAttribute="trailing" constant="190" id="t6h-Z4-xoO"/>
                             <constraint firstAttribute="bottom" secondItem="nf7-2u-lqA" secondAttribute="bottom" constant="399" id="xLj-VY-Ae0"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hfb-jY-dpz"/>
                     </view>
                     <navigationItem key="navigationItem" id="f6j-RZ-xS2"/>
                     <connections>
@@ -1050,6 +1030,9 @@ We'll send it to the Northpole!</string>
             <point key="canvasLocation" x="-100.00000000000001" y="107.8125"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="iiq-id-CMk"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="7-77044_christmas-santa-clipart-5-merry-christmas-png-clipart" width="187.5" height="206.5"/>
         <image name="Back arrow" width="30.5" height="27.5"/>
@@ -1060,8 +1043,17 @@ We'll send it to the Northpole!</string>
         <image name="add button component" width="105" height="103"/>
         <image name="dribbble" width="800" height="600"/>
         <image name="profilePic" width="43" height="44"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="iiq-id-CMk"/>
-    </inferredMetricsTieBreakers>
 </document>
