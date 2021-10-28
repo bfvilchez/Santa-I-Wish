@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17E4E3C32B7006EE77387A00 /* Pods_Santa_I_Wish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9E93457F747C7C5CD1101A /* Pods_Santa_I_Wish.framework */; };
+		DD1CCAFC23EE377600BCCB44 /* AddChildOBJCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1CCAFB23EE377600BCCB44 /* AddChildOBJCViewController.m */; };
+		DD4F322923EBD65800EC2067 /* LetterRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4F322823EBD65800EC2067 /* LetterRepresentation.swift */; };
+		DD5532AC23E8D856003C4451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5532AB23E8D856003C4451 /* LoginViewController.swift */; };
+		DDC2A50023EB23BB00BC40C5 /* Letter+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2A4FF23EB23BB00BC40C5 /* Letter+Convenience.swift */; };
+		DDC2A50423EB266800BC40C5 /* SantaIWishController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2A50323EB266800BC40C5 /* SantaIWishController.swift */; };
+		DDEE92A723EA604D005922DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE92A623EA604D005922DD /* ProfileViewController.swift */; };
+		DDEE92AA23EA686A005922DD /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE92A923EA686A005922DD /* ProfileCollectionViewCell.swift */; };
+		DDEE92AC23EA88DE005922DD /* SantaLettersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE92AB23EA88DE005922DD /* SantaLettersTableViewController.swift */; };
+		DDEE92AE23EA88F5005922DD /* WishlistsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE92AD23EA88F5005922DD /* WishlistsTableViewController.swift */; };
+		DDEE92B023EA8912005922DD /* SendSantaLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE92AF23EA8912005922DD /* SendSantaLetterViewController.swift */; };
+		DDEE92B223EA8923005922DD /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE92B123EA8923005922DD /* AddItemViewController.swift */; };
+		DDEE92B423EA8AB7005922DD /* ChildProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE92B323EA8AB7005922DD /* ChildProfileDetailViewController.swift */; };
+		FA396D2123EC8D7100FCCE47 /* UIImage+Scaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA396D2023EC8D7100FCCE47 /* UIImage+Scaling.swift */; };
+		FA6FBDB123E8907300A1AE05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDB023E8907300A1AE05 /* AppDelegate.swift */; };
+		FA6FBDB323E8907300A1AE05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDB223E8907300A1AE05 /* SceneDelegate.swift */; };
+		FA6FBDB823E8907300A1AE05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6FBDB623E8907300A1AE05 /* Main.storyboard */; };
+		FA6FBDBA23E8907700A1AE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6FBDB923E8907700A1AE05 /* Assets.xcassets */; };
+		FA6FBDBD23E8907700A1AE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6FBDBB23E8907700A1AE05 /* LaunchScreen.storyboard */; };
+		FA6FBDCA23E8958300A1AE05 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDC923E8958300A1AE05 /* NetworkingError.swift */; };
+		FA6FBDCC23E895CA00A1AE05 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDCB23E895CA00A1AE05 /* HTTPMethod.swift */; };
+		FA6FBDD823E8B94900A1AE05 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDD723E8B94900A1AE05 /* Bearer.swift */; };
+		FA6FBDDA23E8BC8E00A1AE05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6FBDD923E8BC8E00A1AE05 /* GoogleService-Info.plist */; };
+		FA6FBDDE23E8C1E200A1AE05 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDDD23E8C1E200A1AE05 /* ViewControllerExtension.swift */; };
+		FA6FBDE023E8F31E00A1AE05 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDDF23E8F31E00A1AE05 /* SignupViewController.swift */; };
+		FA6FBDE223E9042F00A1AE05 /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDE123E9042F00A1AE05 /* AddChildViewController.swift */; };
+		FA6FBDE423E904C100A1AE05 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDE323E904C100A1AE05 /* Keys.swift */; };
+		FA6FBDE723E9330D00A1AE05 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDE623E9330D00A1AE05 /* CoreDataStack.swift */; };
+		FA6FBDEA23E933C900A1AE05 /* SantaIWish.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDE823E933C900A1AE05 /* SantaIWish.xcdatamodeld */; };
+		FA6FBDEC23E9B14C00A1AE05 /* Child+Covenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDEB23E9B14C00A1AE05 /* Child+Covenience.swift */; };
+		FA6FBDEE23E9B17900A1AE05 /* Item+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDED23E9B17900A1AE05 /* Item+Convenience.swift */; };
+		FA6FBDF023E9B1E200A1AE05 /* Parent+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDEF23E9B1E200A1AE05 /* Parent+Convenience.swift */; };
+		FA6FBDF223E9B28E00A1AE05 /* ParentRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDF123E9B28E00A1AE05 /* ParentRepresentation.swift */; };
+		FA6FBDF423E9B37E00A1AE05 /* ChildRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDF323E9B37E00A1AE05 /* ChildRepresentation.swift */; };
+		FA6FBDF623E9B7B300A1AE05 /* ItemRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBDF523E9B7B300A1AE05 /* ItemRepresentation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A9E93457F747C7C5CD1101A /* Pods_Santa_I_Wish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Santa_I_Wish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50697B16549F74D678F59FB3 /* Pods-Santa I Wish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santa I Wish.debug.xcconfig"; path = "Target Support Files/Pods-Santa I Wish/Pods-Santa I Wish.debug.xcconfig"; sourceTree = "<group>"; };
+		DD1CCAF623EE33ED00BCCB44 /* Santa I Wish-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Santa I Wish-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD1CCAFA23EE377600BCCB44 /* AddChildOBJCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddChildOBJCViewController.h; sourceTree = "<group>"; };
+		DD1CCAFB23EE377600BCCB44 /* AddChildOBJCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddChildOBJCViewController.m; sourceTree = "<group>"; };
+		DD4F322823EBD65800EC2067 /* LetterRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterRepresentation.swift; sourceTree = "<group>"; };
+		DD5532AB23E8D856003C4451 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "Santa I Wish/View Controllers/LoginViewController.swift"; sourceTree = SOURCE_ROOT; };
+		DDC2A4FF23EB23BB00BC40C5 /* Letter+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Letter+Convenience.swift"; sourceTree = "<group>"; };
+		DDC2A50323EB266800BC40C5 /* SantaIWishController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantaIWishController.swift; sourceTree = "<group>"; };
+		DDEE92A623EA604D005922DD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DDEE92A923EA686A005922DD /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDEE92AB23EA88DE005922DD /* SantaLettersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantaLettersTableViewController.swift; sourceTree = "<group>"; };
+		DDEE92AD23EA88F5005922DD /* WishlistsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistsTableViewController.swift; sourceTree = "<group>"; };
+		DDEE92AF23EA8912005922DD /* SendSantaLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSantaLetterViewController.swift; sourceTree = "<group>"; };
+		DDEE92B123EA8923005922DD /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		DDEE92B323EA8AB7005922DD /* ChildProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildProfileDetailViewController.swift; sourceTree = "<group>"; };
+		F2DAE351DCC026C4DC586D74 /* Pods-Santa I Wish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santa I Wish.release.xcconfig"; path = "Target Support Files/Pods-Santa I Wish/Pods-Santa I Wish.release.xcconfig"; sourceTree = "<group>"; };
+		FA396D2023EC8D7100FCCE47 /* UIImage+Scaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scaling.swift"; sourceTree = "<group>"; };
+		FA6FBDAD23E8907300A1AE05 /* Santa I Wish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Santa I Wish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6FBDB023E8907300A1AE05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA6FBDB223E8907300A1AE05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA6FBDB723E8907300A1AE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA6FBDB923E8907700A1AE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA6FBDBC23E8907700A1AE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA6FBDBE23E8907700A1AE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6FBDC923E8958300A1AE05 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		FA6FBDCB23E895CA00A1AE05 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		FA6FBDD723E8B94900A1AE05 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
+		FA6FBDD923E8BC8E00A1AE05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA6FBDDD23E8C1E200A1AE05 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		FA6FBDDF23E8F31E00A1AE05 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		FA6FBDE123E9042F00A1AE05 /* AddChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
+		FA6FBDE323E904C100A1AE05 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		FA6FBDE623E9330D00A1AE05 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FA6FBDE923E933C900A1AE05 /* SantaIWish.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SantaIWish.xcdatamodel; sourceTree = "<group>"; };
+		FA6FBDEB23E9B14C00A1AE05 /* Child+Covenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+Covenience.swift"; sourceTree = "<group>"; };
+		FA6FBDED23E9B17900A1AE05 /* Item+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Convenience.swift"; sourceTree = "<group>"; };
+		FA6FBDEF23E9B1E200A1AE05 /* Parent+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parent+Convenience.swift"; sourceTree = "<group>"; };
+		FA6FBDF123E9B28E00A1AE05 /* ParentRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentRepresentation.swift; sourceTree = "<group>"; };
+		FA6FBDF323E9B37E00A1AE05 /* ChildRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildRepresentation.swift; sourceTree = "<group>"; };
+		FA6FBDF523E9B7B300A1AE05 /* ItemRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepresentation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA6FBDAA23E8907300A1AE05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E4E3C32B7006EE77387A00 /* Pods_Santa_I_Wish.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B09F923806ADA87090EF9B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50697B16549F74D678F59FB3 /* Pods-Santa I Wish.debug.xcconfig */,
+				F2DAE351DCC026C4DC586D74 /* Pods-Santa I Wish.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9963FA01DECAC454FA69871 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A9E93457F747C7C5CD1101A /* Pods_Santa_I_Wish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDEE92A823EA6849005922DD /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DDEE92A923EA686A005922DD /* ProfileCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FA6FBDA423E8907300A1AE05 = {
+			isa = PBXGroup;
+			children = (
+				FA6FBDAF23E8907300A1AE05 /* Santa I Wish */,
+				FA6FBDAE23E8907300A1AE05 /* Products */,
+				1B09F923806ADA87090EF9B1 /* Pods */,
+				A9963FA01DECAC454FA69871 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA6FBDAE23E8907300A1AE05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FBDAD23E8907300A1AE05 /* Santa I Wish.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA6FBDAF23E8907300A1AE05 /* Santa I Wish */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FBDC423E892C900A1AE05 /* Storyboards */,
+				FA6FBDC823E892EE00A1AE05 /* View Controllers */,
+				DDEE92A823EA6849005922DD /* CollectionViewCell */,
+				FA6FBDC723E892E500A1AE05 /* Model Controllers */,
+				FA6FBDC523E892D700A1AE05 /* Models */,
+				FA6FBDC623E892DE00A1AE05 /* Helpers */,
+				FA6FBDB023E8907300A1AE05 /* AppDelegate.swift */,
+				FA6FBDB223E8907300A1AE05 /* SceneDelegate.swift */,
+				FA6FBDB923E8907700A1AE05 /* Assets.xcassets */,
+				FA6FBDBE23E8907700A1AE05 /* Info.plist */,
+				FA6FBDD923E8BC8E00A1AE05 /* GoogleService-Info.plist */,
+			);
+			path = "Santa I Wish";
+			sourceTree = "<group>";
+		};
+		FA6FBDC423E892C900A1AE05 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FBDB623E8907300A1AE05 /* Main.storyboard */,
+				FA6FBDBB23E8907700A1AE05 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA6FBDC523E892D700A1AE05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FBDD723E8B94900A1AE05 /* Bearer.swift */,
+				FA6FBDE823E933C900A1AE05 /* SantaIWish.xcdatamodeld */,
+				FA6FBDF123E9B28E00A1AE05 /* ParentRepresentation.swift */,
+				FA6FBDEF23E9B1E200A1AE05 /* Parent+Convenience.swift */,
+				FA6FBDF323E9B37E00A1AE05 /* ChildRepresentation.swift */,
+				FA6FBDEB23E9B14C00A1AE05 /* Child+Covenience.swift */,
+				FA6FBDF523E9B7B300A1AE05 /* ItemRepresentation.swift */,
+				FA6FBDED23E9B17900A1AE05 /* Item+Convenience.swift */,
+				DD4F322823EBD65800EC2067 /* LetterRepresentation.swift */,
+				DDC2A4FF23EB23BB00BC40C5 /* Letter+Convenience.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA6FBDC623E892DE00A1AE05 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FBDC923E8958300A1AE05 /* NetworkingError.swift */,
+				FA6FBDCB23E895CA00A1AE05 /* HTTPMethod.swift */,
+				FA6FBDDD23E8C1E200A1AE05 /* ViewControllerExtension.swift */,
+				FA6FBDE323E904C100A1AE05 /* Keys.swift */,
+				FA6FBDE623E9330D00A1AE05 /* CoreDataStack.swift */,
+				FA396D2023EC8D7100FCCE47 /* UIImage+Scaling.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA6FBDC723E892E500A1AE05 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2A50323EB266800BC40C5 /* SantaIWishController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		FA6FBDC823E892EE00A1AE05 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD5532AB23E8D856003C4451 /* LoginViewController.swift */,
+				FA6FBDDF23E8F31E00A1AE05 /* SignupViewController.swift */,
+				DDEE92A623EA604D005922DD /* ProfileViewController.swift */,
+				DDEE92B323EA8AB7005922DD /* ChildProfileDetailViewController.swift */,
+				FA6FBDE123E9042F00A1AE05 /* AddChildViewController.swift */,
+				DD1CCAFA23EE377600BCCB44 /* AddChildOBJCViewController.h */,
+				DD1CCAFB23EE377600BCCB44 /* AddChildOBJCViewController.m */,
+				DDEE92AD23EA88F5005922DD /* WishlistsTableViewController.swift */,
+				DDEE92B123EA8923005922DD /* AddItemViewController.swift */,
+				DDEE92AF23EA8912005922DD /* SendSantaLetterViewController.swift */,
+				DDEE92AB23EA88DE005922DD /* SantaLettersTableViewController.swift */,
+				DD1CCAF623EE33ED00BCCB44 /* Santa I Wish-Bridging-Header.h */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA6FBDAC23E8907300A1AE05 /* Santa I Wish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6FBDC123E8907700A1AE05 /* Build configuration list for PBXNativeTarget "Santa I Wish" */;
+			buildPhases = (
+				DEADE7819D6ED45578CC8AA5 /* [CP] Check Pods Manifest.lock */,
+				FA6FBDA923E8907300A1AE05 /* Sources */,
+				FA6FBDAA23E8907300A1AE05 /* Frameworks */,
+				FA6FBDAB23E8907300A1AE05 /* Resources */,
+				D59CE604B9089F46CFCE5FE8 /* [CP] Embed Pods Frameworks */,
+				FA6FBDE523E9163300A1AE05 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Santa I Wish";
+			productName = "Santa I Wish";
+			productReference = FA6FBDAD23E8907300A1AE05 /* Santa I Wish.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA6FBDA523E8907300A1AE05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lambda School";
+				TargetAttributes = {
+					FA6FBDAC23E8907300A1AE05 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = FA6FBDA823E8907300A1AE05 /* Build configuration list for PBXProject "Santa I Wish" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA6FBDA423E8907300A1AE05;
+			productRefGroup = FA6FBDAE23E8907300A1AE05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA6FBDAC23E8907300A1AE05 /* Santa I Wish */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA6FBDAB23E8907300A1AE05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6FBDBD23E8907700A1AE05 /* LaunchScreen.storyboard in Resources */,
+				FA6FBDDA23E8BC8E00A1AE05 /* GoogleService-Info.plist in Resources */,
+				FA6FBDBA23E8907700A1AE05 /* Assets.xcassets in Resources */,
+				FA6FBDB823E8907300A1AE05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D59CE604B9089F46CFCE5FE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Santa I Wish/Pods-Santa I Wish-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Santa I Wish/Pods-Santa I Wish-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Santa I Wish/Pods-Santa I Wish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEADE7819D6ED45578CC8AA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Santa I Wish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6FBDE523E9163300A1AE05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA6FBDA923E8907300A1AE05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6FBDF223E9B28E00A1AE05 /* ParentRepresentation.swift in Sources */,
+				FA6FBDD823E8B94900A1AE05 /* Bearer.swift in Sources */,
+				DDEE92A723EA604D005922DD /* ProfileViewController.swift in Sources */,
+				FA6FBDCC23E895CA00A1AE05 /* HTTPMethod.swift in Sources */,
+				FA6FBDB123E8907300A1AE05 /* AppDelegate.swift in Sources */,
+				DD1CCAFC23EE377600BCCB44 /* AddChildOBJCViewController.m in Sources */,
+				DDC2A50023EB23BB00BC40C5 /* Letter+Convenience.swift in Sources */,
+				DDEE92B223EA8923005922DD /* AddItemViewController.swift in Sources */,
+				DDEE92B423EA8AB7005922DD /* ChildProfileDetailViewController.swift in Sources */,
+				FA6FBDF023E9B1E200A1AE05 /* Parent+Convenience.swift in Sources */,
+				FA6FBDCA23E8958300A1AE05 /* NetworkingError.swift in Sources */,
+				DDEE92AE23EA88F5005922DD /* WishlistsTableViewController.swift in Sources */,
+				FA6FBDE423E904C100A1AE05 /* Keys.swift in Sources */,
+				FA6FBDE723E9330D00A1AE05 /* CoreDataStack.swift in Sources */,
+				DDEE92AC23EA88DE005922DD /* SantaLettersTableViewController.swift in Sources */,
+				FA6FBDE023E8F31E00A1AE05 /* SignupViewController.swift in Sources */,
+				DDEE92AA23EA686A005922DD /* ProfileCollectionViewCell.swift in Sources */,
+				FA6FBDEE23E9B17900A1AE05 /* Item+Convenience.swift in Sources */,
+				FA6FBDEC23E9B14C00A1AE05 /* Child+Covenience.swift in Sources */,
+				DD4F322923EBD65800EC2067 /* LetterRepresentation.swift in Sources */,
+				FA6FBDEA23E933C900A1AE05 /* SantaIWish.xcdatamodeld in Sources */,
+				FA6FBDDE23E8C1E200A1AE05 /* ViewControllerExtension.swift in Sources */,
+				FA396D2123EC8D7100FCCE47 /* UIImage+Scaling.swift in Sources */,
+				FA6FBDF423E9B37E00A1AE05 /* ChildRepresentation.swift in Sources */,
+				FA6FBDF623E9B7B300A1AE05 /* ItemRepresentation.swift in Sources */,
+				FA6FBDB323E8907300A1AE05 /* SceneDelegate.swift in Sources */,
+				DDC2A50423EB266800BC40C5 /* SantaIWishController.swift in Sources */,
+				DD5532AC23E8D856003C4451 /* LoginViewController.swift in Sources */,
+				DDEE92B023EA8912005922DD /* SendSantaLetterViewController.swift in Sources */,
+				FA6FBDE223E9042F00A1AE05 /* AddChildViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA6FBDB623E8907300A1AE05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6FBDB723E8907300A1AE05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA6FBDBB23E8907700A1AE05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6FBDBC23E8907700A1AE05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA6FBDBF23E8907700A1AE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA6FBDC023E8907700A1AE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA6FBDC223E8907700A1AE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50697B16549F74D678F59FB3 /* Pods-Santa I Wish.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = "Santa I Wish/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Santa-I-Wish";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Santa I Wish/View Controllers/Santa I Wish-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA6FBDC323E8907700A1AE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DAE351DCC026C4DC586D74 /* Pods-Santa I Wish.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = "Santa I Wish/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Santa-I-Wish";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Santa I Wish/View Controllers/Santa I Wish-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA6FBDA823E8907300A1AE05 /* Build configuration list for PBXProject "Santa I Wish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6FBDBF23E8907700A1AE05 /* Debug */,
+				FA6FBDC023E8907700A1AE05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6FBDC123E8907700A1AE05 /* Build configuration list for PBXNativeTarget "Santa I Wish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6FBDC223E8907700A1AE05 /* Debug */,
+				FA6FBDC323E8907700A1AE05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA6FBDE823E933C900A1AE05 /* SantaIWish.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA6FBDE923E933C900A1AE05 /* SantaIWish.xcdatamodel */,
+			);
+			currentVersion = FA6FBDE923E933C900A1AE05 /* SantaIWish.xcdatamodel */;
+			path = SantaIWish.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA6FBDA523E8907300A1AE05 /* Project object */;
+}
