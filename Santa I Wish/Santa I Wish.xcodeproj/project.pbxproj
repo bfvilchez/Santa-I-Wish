@@ -10,9 +10,10 @@
 		DDDA5CFA272B5E42003CE2B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA5CF9272B5E42003CE2B3 /* AppDelegate.swift */; };
 		DDDA5CFC272B5E42003CE2B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA5CFB272B5E42003CE2B3 /* SceneDelegate.swift */; };
 		DDDA5CFE272B5E42003CE2B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA5CFD272B5E42003CE2B3 /* ViewController.swift */; };
-		DDDA5D01272B5E42003CE2B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5CFF272B5E42003CE2B3 /* Main.storyboard */; };
 		DDDA5D03272B5E43003CE2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D02272B5E43003CE2B3 /* Assets.xcassets */; };
 		DDDA5D06272B5E43003CE2B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D04272B5E43003CE2B3 /* LaunchScreen.storyboard */; };
+		DDDA5D13272B5F54003CE2B3 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D12272B5F54003CE2B3 /* Authentication.storyboard */; };
+		DDDA5D15272B6AD7003CE2B3 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D14272B6AD7003CE2B3 /* HomeScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		DDDA5CF9272B5E42003CE2B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDA5CFB272B5E42003CE2B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DDDA5CFD272B5E42003CE2B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DDDA5D00272B5E42003CE2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDDA5D02272B5E43003CE2B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDDA5D05272B5E43003CE2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDDA5D07272B5E43003CE2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDA5D12272B5F54003CE2B3 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		DDDA5D14272B6AD7003CE2B3 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,9 @@
 		DDDA5D11272B5EAC003CE2B3 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DDDA5CFF272B5E42003CE2B3 /* Main.storyboard */,
 				DDDA5D04272B5E43003CE2B3 /* LaunchScreen.storyboard */,
+				DDDA5D12272B5F54003CE2B3 /* Authentication.storyboard */,
+				DDDA5D14272B6AD7003CE2B3 /* HomeScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -165,9 +168,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDA5D13272B5F54003CE2B3 /* Authentication.storyboard in Resources */,
+				DDDA5D15272B6AD7003CE2B3 /* HomeScreen.storyboard in Resources */,
 				DDDA5D06272B5E43003CE2B3 /* LaunchScreen.storyboard in Resources */,
 				DDDA5D03272B5E43003CE2B3 /* Assets.xcassets in Resources */,
-				DDDA5D01272B5E42003CE2B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DDDA5CFF272B5E42003CE2B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDDA5D00272B5E42003CE2B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DDDA5D04272B5E43003CE2B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -334,7 +330,7 @@
 				INFOPLIST_FILE = "Santa I Wish/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,7 +358,7 @@
 				INFOPLIST_FILE = "Santa I Wish/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
