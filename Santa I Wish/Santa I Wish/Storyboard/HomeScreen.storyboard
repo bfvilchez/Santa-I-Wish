@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,6 +32,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="160" height="152"/>
+                                <connections>
+                                    <segue destination="dXW-bh-qng" kind="showDetail" id="UAO-aX-EWg"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -41,10 +45,66 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adX-XG-g6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="482.60869565217394" y="71.651785714285708"/>
+            <point key="canvasLocation" x="493" y="72"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eJh-K6-DBn">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="dXW-bh-qng" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4p2-zS-mgq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="f34-CJ-0qu">
+                                <rect key="frame" x="87" y="64" width="240" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="Tht-8K-Uh5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mikeala Anderson" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGx-xi-zb1">
+                                <rect key="frame" x="50" y="299" width="314" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9k-Hu-plC">
+                                <rect key="frame" x="39" y="389" width="123" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Wish List">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph2-Oc-DFe">
+                                <rect key="frame" x="201" y="388" width="193" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Letters to Santa">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pQz-RK-2Mm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f34-CJ-0qu" firstAttribute="leading" secondItem="pQz-RK-2Mm" secondAttribute="leading" constant="87" id="0Gw-Ha-8pj"/>
+                            <constraint firstItem="oGx-xi-zb1" firstAttribute="top" secondItem="f34-CJ-0qu" secondAttribute="bottom" constant="20" id="9VC-gA-SK5"/>
+                            <constraint firstItem="oGx-xi-zb1" firstAttribute="leading" secondItem="pQz-RK-2Mm" secondAttribute="leading" constant="50" id="LMz-pQ-k5u"/>
+                            <constraint firstItem="oGx-xi-zb1" firstAttribute="centerX" secondItem="4p2-zS-mgq" secondAttribute="centerX" id="OJD-n9-cz0"/>
+                            <constraint firstItem="pQz-RK-2Mm" firstAttribute="trailing" secondItem="oGx-xi-zb1" secondAttribute="trailing" constant="50" id="cOl-GX-l09"/>
+                            <constraint firstItem="pQz-RK-2Mm" firstAttribute="trailing" secondItem="f34-CJ-0qu" secondAttribute="trailing" constant="87" id="ciO-Ys-pcm"/>
+                            <constraint firstItem="f34-CJ-0qu" firstAttribute="top" secondItem="pQz-RK-2Mm" secondAttribute="top" constant="20" id="gMR-CA-KE7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kc5-YF-eUp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVp-Zp-a2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273.913043478261" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>
+        <image name="girl" width="2848" height="4288"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

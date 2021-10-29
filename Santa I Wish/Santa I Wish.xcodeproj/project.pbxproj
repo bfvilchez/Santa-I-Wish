@@ -14,6 +14,8 @@
 		DDDA5D06272B5E43003CE2B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D04272B5E43003CE2B3 /* LaunchScreen.storyboard */; };
 		DDDA5D13272B5F54003CE2B3 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D12272B5F54003CE2B3 /* Authentication.storyboard */; };
 		DDDA5D15272B6AD7003CE2B3 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D14272B6AD7003CE2B3 /* HomeScreen.storyboard */; };
+		DDDA5D17272BA159003CE2B3 /* WIshList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D16272BA159003CE2B3 /* WIshList.storyboard */; };
+		DDDA5D19272BA169003CE2B3 /* Letters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D18272BA169003CE2B3 /* Letters.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DDDA5D07272B5E43003CE2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDDA5D12272B5F54003CE2B3 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		DDDA5D14272B6AD7003CE2B3 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		DDDA5D16272BA159003CE2B3 /* WIshList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WIshList.storyboard; sourceTree = "<group>"; };
+		DDDA5D18272BA169003CE2B3 /* Letters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Letters.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				DDDA5D04272B5E43003CE2B3 /* LaunchScreen.storyboard */,
 				DDDA5D12272B5F54003CE2B3 /* Authentication.storyboard */,
 				DDDA5D14272B6AD7003CE2B3 /* HomeScreen.storyboard */,
+				DDDA5D16272BA159003CE2B3 /* WIshList.storyboard */,
+				DDDA5D18272BA169003CE2B3 /* Letters.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -170,7 +176,9 @@
 			files = (
 				DDDA5D13272B5F54003CE2B3 /* Authentication.storyboard in Resources */,
 				DDDA5D15272B6AD7003CE2B3 /* HomeScreen.storyboard in Resources */,
+				DDDA5D19272BA169003CE2B3 /* Letters.storyboard in Resources */,
 				DDDA5D06272B5E43003CE2B3 /* LaunchScreen.storyboard in Resources */,
+				DDDA5D17272BA159003CE2B3 /* WIshList.storyboard in Resources */,
 				DDDA5D03272B5E43003CE2B3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
