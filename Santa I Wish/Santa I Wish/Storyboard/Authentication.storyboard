@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="898" y="517"/>
         </scene>
-        <!--View Controller-->
+        <!--SignupVC-->
         <scene sceneID="jwN-lg-2i0">
             <objects>
-                <viewController id="jtx-14-GPT" sceneMemberID="viewController">
+                <viewController id="jtx-14-GPT" customClass="SignupVC" customModule="Santa_I_Wish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Hj-9n-XoT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,6 +142,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="continueButtonPressed:" destination="jtx-14-GPT" eventType="touchUpInside" id="kLH-mu-Jfm"/>
                                     <segue destination="0Jx-P3-kV8" kind="show" id="iTQ-Af-fgs"/>
                                 </connections>
                             </button>
@@ -168,6 +169,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="dZO-EP-rIY"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="IQZ-Xo-Ae7" id="7Zg-Ri-n5X"/>
+                        <outlet property="fullNameTextField" destination="M2a-eD-RRr" id="sje-LA-jYL"/>
+                        <outlet property="passwordTextField" destination="FFl-Zf-Wak" id="M62-r3-0q7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Usb-7m-Pw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,7 +201,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iTQ-Af-fgs"/>
+        <segue reference="hrb-ee-CS0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Santa-1" width="225" height="225"/>

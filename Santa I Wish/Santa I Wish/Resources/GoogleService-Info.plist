@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>204197688406-hk3s8q3djp8enfmarg6t104u27i3ath1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.204197688406-hk3s8q3djp8enfmarg6t104u27i3ath1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC2IwOiZnJumYiMSsFuvnk2goqdH9IIdyI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>204197688406</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.BrianVilchez.Santa-I-Wish</string>
+	<key>PROJECT_ID</key>
+	<string>santa-i-wish-afb92</string>
+	<key>STORAGE_BUCKET</key>
+	<string>santa-i-wish-afb92.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:204197688406:ios:dbea9fd83ddb2270f6b7f7</string>
+</dict>
+</plist>

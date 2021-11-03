@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LNW-py-H6q" customClass="LoginPopupView" customModule="Santa_I_Wish" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ejt-00-iqg">
+                    <rect key="frame" x="50" y="30" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="iA9-53-MuK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-ch-abX">
+                    <rect key="frame" x="50" y="170" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vtR-0e-Ehh"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Login">
+                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                        <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                    </buttonConfiguration>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2tu-nA-WFg">
+                    <rect key="frame" x="50" y="100" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="eJc-ce-G1L"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="2Dm-Em-b1S"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Dm-Em-b1S" firstAttribute="trailing" secondItem="Ejt-00-iqg" secondAttribute="trailing" constant="50" id="DvZ-pE-l2S"/>
+                <constraint firstItem="0k0-ch-abX" firstAttribute="leading" secondItem="2Dm-Em-b1S" secondAttribute="leading" constant="50" id="EIU-1A-l7d"/>
+                <constraint firstItem="2tu-nA-WFg" firstAttribute="top" secondItem="Ejt-00-iqg" secondAttribute="bottom" constant="20" id="Km7-By-oIw"/>
+                <constraint firstItem="2tu-nA-WFg" firstAttribute="leading" secondItem="2Dm-Em-b1S" secondAttribute="leading" constant="50" id="Nod-s1-kzC"/>
+                <constraint firstItem="Ejt-00-iqg" firstAttribute="top" secondItem="LNW-py-H6q" secondAttribute="top" constant="30" id="QKt-oa-eN8"/>
+                <constraint firstItem="2Dm-Em-b1S" firstAttribute="bottom" secondItem="0k0-ch-abX" secondAttribute="bottom" constant="80" id="TuE-pq-ER3"/>
+                <constraint firstItem="2Dm-Em-b1S" firstAttribute="trailing" secondItem="2tu-nA-WFg" secondAttribute="trailing" constant="50" id="VH1-Kq-MDc"/>
+                <constraint firstItem="2Dm-Em-b1S" firstAttribute="trailing" secondItem="0k0-ch-abX" secondAttribute="trailing" constant="50" id="ilI-US-JEB"/>
+                <constraint firstItem="Ejt-00-iqg" firstAttribute="leading" secondItem="2Dm-Em-b1S" secondAttribute="leading" constant="50" id="nk9-F5-OUL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="490" y="206"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
