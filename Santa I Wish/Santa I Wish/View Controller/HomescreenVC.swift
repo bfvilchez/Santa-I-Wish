@@ -8,4 +8,12 @@
 import Foundation
 import UIKit
 
-class HomescreenVC: UIViewController {}
+class HomescreenVC: UIViewController {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+}

@@ -31,4 +31,16 @@ import UIKit
         }
     }
     
+    @IBInspectable var borderColor: CGColor = UIColor.clear.cgColor {
+        didSet {
+            self.layer.borderColor = borderColor
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            self.layer.borderWidth = borderWidth
+        }
+    }
+    
 }

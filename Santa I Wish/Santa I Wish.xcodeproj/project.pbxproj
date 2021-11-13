@@ -12,6 +12,7 @@
 		DD79BB202733084000DDDD28 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DD79BB1F2733084000DDDD28 /* FirebaseFirestoreSwift-Beta */; };
 		DD79BB2327330A7000DDDD28 /* FirebaseManagerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79BB2227330A7000DDDD28 /* FirebaseManagerAPI.swift */; };
 		DD79BB25273313AF00DDDD28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD79BB24273313AF00DDDD28 /* GoogleService-Info.plist */; };
+		DD9A942127338577005BDABA /* MessageAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A942027338577005BDABA /* MessageAlertView.swift */; };
 		DDDA5CFA272B5E42003CE2B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA5CF9272B5E42003CE2B3 /* AppDelegate.swift */; };
 		DDDA5CFC272B5E42003CE2B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA5CFB272B5E42003CE2B3 /* SceneDelegate.swift */; };
 		DDDA5D03272B5E43003CE2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D02272B5E43003CE2B3 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		DD79BB2227330A7000DDDD28 /* FirebaseManagerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManagerAPI.swift; sourceTree = "<group>"; };
 		DD79BB24273313AF00DDDD28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD9A942027338577005BDABA /* MessageAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlertView.swift; sourceTree = "<group>"; };
 		DDDA5CF6272B5E42003CE2B3 /* Santa I Wish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Santa I Wish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDA5CF9272B5E42003CE2B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDA5CFB272B5E42003CE2B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				DDDA5D2D272C3E62003CE2B3 /* ProfileImageView.swift */,
 				DDDA5D33272C44EC003CE2B3 /* LoginPopupView.swift */,
+				DD9A942027338577005BDABA /* MessageAlertView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDA5D2B272C3E28003CE2B3 /* WishListTVC.swift in Sources */,
+				DD9A942127338577005BDABA /* MessageAlertView.swift in Sources */,
 				DDDA5D1D272C3D8B003CE2B3 /* SignupVC.swift in Sources */,
 				DDDA5D23272C3DC0003CE2B3 /* ChildProfileVC.swift in Sources */,
 				DDDA5CFA272B5E42003CE2B3 /* AppDelegate.swift in Sources */,

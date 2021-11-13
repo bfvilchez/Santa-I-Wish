@@ -16,7 +16,7 @@ class SignupVC: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     // MARK: - Properties
-    private let firebase = FirebaseManagerAPI()
+    private let firebaseAPI = FirebaseManagerAPI()
     
     // MARK: - Initializers
     override func viewDidLoad() {
@@ -25,27 +25,30 @@ class SignupVC: UIViewController {
     
     // MARK: - IBAction
     @IBAction func continueButtonPressed(_ sender: UIButton) {
+        registerAccount()
     }
     
     // MARK: - Methods
     private func registerAccount() {
         
         guard let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
-        let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
-        let name = fullNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
-            
-        if isPasswordValid(password) {
-            firebase.registerAccount(withEmail: email, password: password) { Result in
-                
-            }
+              !password.isEmpty, let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !email.isEmpty, let name = fullNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !name.isEmpty else {
+            firebaseAPI.showAccountErrorAlert(errorMessage: "Please fill out all fields")
+            self.present(firebaseAPI.alertVC!, animated: true, completion: nil)
+            return
         }
-    }
-    
-    private func isPasswordValid(_ password: String) -> Bool {
-        // 1 - Password length is 8.
-        // 2 - One Alphabet in Password.
-        // 3 - One Special Character in Password.
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
-        return passwordTest.evaluate(with: password)
+            
+        if firebaseAPI.isPasswordValid(password) && firebaseAPI.isEmailValid(email: email) {
+            firebaseAPI.registerAccount(withEmail: email, password: password, fullName: name) { result in
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "ShowHomeSegue", sender: nil)
+                }
+            }
+        } else {
+            firebaseAPI.showAccountErrorAlert(errorMessage: "Please insert valid credentials")
+            self.present(firebaseAPI.alertVC!, animated: true, completion: nil)
+        }
     }
 }
