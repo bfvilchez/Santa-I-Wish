@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD468C5527432B87003BC235 /* ChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD468C5427432B87003BC235 /* ChildCell.swift */; };
+		DD4C20682743247900F7B4F5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4C20672743247900F7B4F5 /* Settings.storyboard */; };
 		DD79BB1C2733084000DDDD28 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DD79BB1B2733084000DDDD28 /* FirebaseAuth */; };
 		DD79BB1E2733084000DDDD28 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DD79BB1D2733084000DDDD28 /* FirebaseFirestore */; };
 		DD79BB202733084000DDDD28 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DD79BB1F2733084000DDDD28 /* FirebaseFirestoreSwift-Beta */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD468C5427432B87003BC235 /* ChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCell.swift; sourceTree = "<group>"; };
+		DD4C20672743247900F7B4F5 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		DD79BB2227330A7000DDDD28 /* FirebaseManagerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManagerAPI.swift; sourceTree = "<group>"; };
 		DD79BB24273313AF00DDDD28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD9A942027338577005BDABA /* MessageAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlertView.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				DDDA5D22272C3DC0003CE2B3 /* ChildProfileVC.swift */,
 				DDDA5D26272C3DE9003CE2B3 /* LettersTVC.swift */,
 				DDDA5D2A272C3E28003CE2B3 /* WishListTVC.swift */,
+				DD468C5427432B87003BC235 /* ChildCell.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				DDDA5D14272B6AD7003CE2B3 /* HomeScreen.storyboard */,
 				DDDA5D16272BA159003CE2B3 /* WIshList.storyboard */,
 				DDDA5D18272BA169003CE2B3 /* Letters.storyboard */,
+				DD4C20672743247900F7B4F5 /* Settings.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 				DDDA5D19272BA169003CE2B3 /* Letters.storyboard in Resources */,
 				DDDA5D06272B5E43003CE2B3 /* LaunchScreen.storyboard in Resources */,
 				DDDA5D32272C433F003CE2B3 /* LoginPopup.xib in Resources */,
+				DD4C20682743247900F7B4F5 /* Settings.storyboard in Resources */,
 				DDDA5D17272BA159003CE2B3 /* WIshList.storyboard in Resources */,
 				DDDA5D03272B5E43003CE2B3 /* Assets.xcassets in Resources */,
 			);
@@ -264,6 +271,7 @@
 				DDDA5D34272C44EC003CE2B3 /* LoginPopupView.swift in Sources */,
 				DDDA5D21272C3DAC003CE2B3 /* HomescreenVC.swift in Sources */,
 				DDDA5D2E272C3E62003CE2B3 /* ProfileImageView.swift in Sources */,
+				DD468C5527432B87003BC235 /* ChildCell.swift in Sources */,
 				DDDA5D1B272C3D80003CE2B3 /* LoginVC.swift in Sources */,
 				DD79BB2327330A7000DDDD28 /* FirebaseManagerAPI.swift in Sources */,
 				DDDA5CFC272B5E42003CE2B3 /* SceneDelegate.swift in Sources */,
