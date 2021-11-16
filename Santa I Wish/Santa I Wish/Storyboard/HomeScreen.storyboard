@@ -69,6 +69,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="165" height="142"/>
                                         <connections>
+                                            <outlet property="childName" destination="cSr-ja-8aV" id="rBb-I4-50Z"/>
                                             <segue destination="dXW-bh-qng" kind="show" id="Xsu-Cx-UbW"/>
                                         </connections>
                                     </collectionViewCell>
