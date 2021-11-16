@@ -9,7 +9,7 @@ import UIKit
 
 class ChildCell: UICollectionViewCell {
     
-    @IBOutlet weak var childName: UILabel!
+    @IBOutlet weak var childNameLabel: UILabel!
 
     
 }

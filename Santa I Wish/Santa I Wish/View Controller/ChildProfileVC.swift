@@ -15,12 +15,35 @@ class childProfileVC: UIViewController {
     @IBOutlet weak var profileImage: ProfileImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    private var labels = ["Wish List", "letters"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
+    }
+    
+    private func configureView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
         profileImage.borderColor = UIColor.red.cgColor
+        navigationController?.navigationBar.isHidden = false
     }
     
     
+}
+
+extension childProfileVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return labels.count
+    }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TypeCell", for: indexPath) as? WishListAndLettersCellCollectionViewCell else {
+          return  UICollectionViewCell() }
+        
+        cell.nameLabel.text = labels[indexPath.row]
+        cell.layer.cornerRadius = 30
+        return cell
+    }
 }

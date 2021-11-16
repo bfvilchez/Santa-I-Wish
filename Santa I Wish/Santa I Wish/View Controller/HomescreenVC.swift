@@ -25,17 +25,23 @@ class HomescreenVC: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureView()
+    }
 }
 
 extension HomescreenVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChildCell", for: indexPath)
-        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChildCell", for: indexPath) as? ChildCell else {
+          return  UICollectionViewCell() }
+        cell.childNameLabel.text = "Lyla issac"
+        cell.layer.cornerRadius = 30
         return cell
     }
 }
