@@ -1,30 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController title="Settings" id="Y6W-OH-hqX" customClass="SettingsVC" customModule="Santa_I_Wish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jJK-Dl-2LH" customClass="ProfileImageView" customModule="Santa_I_Wish" customModuleProvider="target">
+                                <rect key="frame" x="107" y="130.5" width="200" height="199"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BIN-B6-cvj"/>
+                                    <constraint firstAttribute="width" secondItem="jJK-Dl-2LH" secondAttribute="height" multiplier="1:1" id="JRE-0w-GTh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="PF6-x9-nwG"/>
+                                    <constraint firstAttribute="height" constant="200" id="e5e-zS-0t3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5K-X0-3Er">
+                                <rect key="frame" x="20" y="360" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="7cc-3m-Cag"/>
+                                    <constraint firstAttribute="height" constant="50" id="KPr-SG-Gw3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hh2-fV-Sc1">
+                                <rect key="frame" x="20" y="440" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lSl-Rw-1sw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ro-67-28X">
+                                <rect key="frame" x="20" y="64" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsT-9R-MhI">
+                                <rect key="frame" x="50" y="520" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xhx-7A-Jxh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ii-ds-hX1">
+                                <rect key="frame" x="255" y="134" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Bny-WL-j4X"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="HJy-cb-573"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="kKR-c8-0yP"/>
+                                    <constraint firstAttribute="width" constant="25" id="lNX-s5-vIG"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
+                                    <imageReference key="image" image="pencil" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25" scale="large" weight="heavy"/>
+                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCj-An-th4">
+                                <rect key="frame" x="50" y="590" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9pJ-XD-q3m"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="pFl-8E-GnN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Out">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jsT-9R-MhI" secondAttribute="trailing" constant="50" id="0u5-Gm-R0W"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="l5K-X0-3Er" secondAttribute="trailing" constant="20" id="2Qt-OK-h6C"/>
+                            <constraint firstItem="jJK-Dl-2LH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="107" id="2hO-aB-Pe8"/>
+                            <constraint firstItem="6ro-67-28X" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="4Db-OO-J3M"/>
+                            <constraint firstItem="6ro-67-28X" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6bd-uQ-Odl"/>
+                            <constraint firstItem="7Ii-ds-hX1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="255" id="E38-Cg-omy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jJK-Dl-2LH" secondAttribute="trailing" constant="107" id="IGk-O7-7Tn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6ro-67-28X" secondAttribute="trailing" constant="20" id="Kbe-8z-ecB"/>
+                            <constraint firstItem="jJK-Dl-2LH" firstAttribute="top" secondItem="6ro-67-28X" secondAttribute="bottom" constant="30" id="OqB-69-30A"/>
+                            <constraint firstItem="jsT-9R-MhI" firstAttribute="top" secondItem="Hh2-fV-Sc1" secondAttribute="bottom" constant="30" id="P74-Bo-wLg"/>
+                            <constraint firstItem="jsT-9R-MhI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="PpE-YJ-3Lc"/>
+                            <constraint firstItem="dCj-An-th4" firstAttribute="top" secondItem="jsT-9R-MhI" secondAttribute="bottom" constant="20" id="RzF-Yo-Pu8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dCj-An-th4" secondAttribute="trailing" constant="50" id="T1P-Lh-mnS"/>
+                            <constraint firstItem="Hh2-fV-Sc1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Tv0-Db-xGb"/>
+                            <constraint firstItem="dCj-An-th4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="ftl-Tk-MSh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Hh2-fV-Sc1" secondAttribute="trailing" constant="20" id="ggm-Kb-D6p"/>
+                            <constraint firstItem="7Ii-ds-hX1" firstAttribute="top" secondItem="6ro-67-28X" secondAttribute="bottom" constant="34" id="hWB-nt-dpl"/>
+                            <constraint firstItem="l5K-X0-3Er" firstAttribute="top" secondItem="jJK-Dl-2LH" secondAttribute="bottom" constant="30" id="p2B-Bo-WGj"/>
+                            <constraint firstItem="l5K-X0-3Er" firstAttribute="top" secondItem="jJK-Dl-2LH" secondAttribute="bottom" constant="30" id="sBf-UZ-12w"/>
+                            <constraint firstItem="l5K-X0-3Er" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xIa-rH-JWu"/>
+                            <constraint firstItem="Hh2-fV-Sc1" firstAttribute="top" secondItem="l5K-X0-3Er" secondAttribute="bottom" constant="30" id="yv1-sY-fCn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="10" y="81"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="jJK-Dl-2LH">
+            <size key="intrinsicContentSize" width="20" height="20"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -10,6 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Settings-->
+        <scene sceneID="x78-YP-uoe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="9Tr-I5-Zz9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="w4I-Vl-1zK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95n-qE-CJO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-427"/>
+        </scene>
         <!--HomeScreen-->
         <scene sceneID="ani-I7-CWU">
             <objects>
@@ -37,6 +47,9 @@
                                     </preferredSymbolConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="9Tr-I5-Zz9" kind="show" id="NvP-Wn-3Gi"/>
+                                </connections>
                             </button>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QdN-Vu-s3W">
                                 <rect key="frame" x="0.0" y="184" width="414" height="678"/>
@@ -86,9 +99,9 @@
                                     <constraint firstAttribute="height" constant="50" id="b63-d1-BcX"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system" imagePadding="22" cornerStyle="capsule">
                                     <backgroundConfiguration key="background"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -190,7 +203,6 @@
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="Mub-z5-H3v" id="rvl-XV-iaz"/>
-                                            <segue destination="Lgj-Rs-Jvr" kind="show" id="P2f-xE-Xkj"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -217,6 +229,8 @@
                         <outlet property="collectionView" destination="gnI-JF-2bg" id="t8t-Qd-IAN"/>
                         <outlet property="nameLabel" destination="oGx-xi-zb1" id="qQs-Yg-oXg"/>
                         <outlet property="profileImage" destination="f34-CJ-0qu" id="3DW-HS-wKy"/>
+                        <segue destination="Lgj-Rs-Jvr" kind="show" identifier="lettersSegue" id="Twl-0m-3n3"/>
+                        <segue destination="oLQ-Od-zKo" kind="show" identifier="wishListSegue" id="eLX-V4-Vno"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVp-Zp-a2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

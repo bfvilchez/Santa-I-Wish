@@ -46,4 +46,15 @@ extension childProfileVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.layer.cornerRadius = 30
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let selectedLabel = labels[indexPath.row]
+        
+        if selectedLabel == labels.last {
+            performSegue(withIdentifier: "lettersSegue", sender: nil)
+        } else {
+            performSegue(withIdentifier: "wishListSegue", sender: nil)
+        }
+    }
 }
