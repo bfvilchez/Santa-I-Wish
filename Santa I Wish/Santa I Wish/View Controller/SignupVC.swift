@@ -51,4 +51,12 @@ class SignupVC: UIViewController {
             self.present(firebaseAPI.alertVC!, animated: true, completion: nil)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowHomeSegue" {
+            let destinationVC = segue.destination as? HomescreenVC
+            destinationVC?.childParent = firebaseAPI.parent
+        }
+    }
 }
+

@@ -13,8 +13,13 @@ class FirebaseManagerAPI {
     
     var alertVC: UIAlertController?
     private let firestoreDB = Firestore.firestore()
+    var parent: Parent?
     
     func registerAccount(withEmail email: String, password: String, fullName: String, completion: @escaping(Result<String,Error>) -> Void) {
+        
+        let parent = Parent(name: fullName, email: email, password: password, context: CoreDataStack.shared.mainContext)
+        
+        self.parent = parent
         
         Auth.auth().createUser(withEmail: email, password: password) { _, networkError in
             if let error = networkError {

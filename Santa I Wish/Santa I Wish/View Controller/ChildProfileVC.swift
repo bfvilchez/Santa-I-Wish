@@ -15,6 +15,7 @@ class childProfileVC: UIViewController {
     @IBOutlet weak var profileImage: ProfileImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var child: Child? 
     private var labels = ["Wish List", "letters"]
     
     override func viewDidLoad() {
@@ -23,8 +24,13 @@ class childProfileVC: UIViewController {
     }
     
     private func configureView() {
+        guard let child = child else { return }
+        nameLabel.text = child.name
+        ageLabel.text = "\(child.age)"
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        
         profileImage.borderColor = UIColor.red.cgColor
         navigationController?.navigationBar.isHidden = false
     }

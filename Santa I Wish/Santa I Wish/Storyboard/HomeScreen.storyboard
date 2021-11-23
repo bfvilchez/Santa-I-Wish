@@ -48,7 +48,7 @@
                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="9Tr-I5-Zz9" kind="show" id="NvP-Wn-3Gi"/>
+                                    <segue destination="9Tr-I5-Zz9" kind="show" identifier="SettingsSegue" id="NvP-Wn-3Gi"/>
                                 </connections>
                             </button>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QdN-Vu-s3W">
@@ -83,7 +83,7 @@
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <connections>
                                             <outlet property="childNameLabel" destination="cSr-ja-8aV" id="rBb-I4-50Z"/>
-                                            <segue destination="dXW-bh-qng" kind="show" id="Xsu-Cx-UbW"/>
+                                            <segue destination="dXW-bh-qng" kind="show" identifier="childSegue" id="Xsu-Cx-UbW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -247,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="1030" y="490"/>
         </scene>
-        <!--View Controller-->
+        <!--Add ChildVC-->
         <scene sceneID="vhX-AM-uF8">
             <objects>
-                <viewController id="1XF-g3-2SW" sceneMemberID="viewController">
+                <viewController id="1XF-g3-2SW" customClass="AddChildVC" customModule="Santa_I_Wish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FAC-o3-ryW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,6 +301,9 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveTapped:" destination="1XF-g3-2SW" eventType="touchUpInside" id="p7r-AT-bzV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbt-MP-PLM">
                                 <rect key="frame" x="255" y="130" width="25" height="25"/>
@@ -337,6 +340,11 @@
                             <constraint firstItem="Ukd-9r-KJT" firstAttribute="top" secondItem="YeR-0n-nFC" secondAttribute="bottom" constant="30" id="ytC-L3-JfE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="Ukd-9r-KJT" id="Dca-da-l9s"/>
+                        <outlet property="nameTextField" destination="YeR-0n-nFC" id="QgH-th-Mri"/>
+                        <outlet property="profileImageView" destination="Ck9-yV-jJr" id="uLv-4p-Sah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUQ-3u-S6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

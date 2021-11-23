@@ -18,6 +18,11 @@
 		DDA2E558274370C100989166 /* WishListAndLettersCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA2E557274370C100989166 /* WishListAndLettersCellCollectionViewCell.swift */; };
 		DDD4DF87274C230200A2C976 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4DF86274C230200A2C976 /* SettingsVC.swift */; };
 		DDD4DF8A274C2C1100A2C976 /* SantaIWishModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDD4DF88274C2C1100A2C976 /* SantaIWishModel.xcdatamodeld */; };
+		DDD4DF8D274C387B00A2C976 /* Child+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4DF8C274C387B00A2C976 /* Child+Convenience.swift */; };
+		DDD4DF8F274C389100A2C976 /* Parent+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4DF8E274C389100A2C976 /* Parent+Convenience.swift */; };
+		DDD4DF92274C38D700A2C976 /* Child+Representation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4DF91274C38D700A2C976 /* Child+Representation.swift */; };
+		DDD4DF94274C3B1B00A2C976 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4DF93274C3B1B00A2C976 /* CoreDataStack.swift */; };
+		DDD4DF96274C5D7700A2C976 /* AddChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4DF95274C5D7700A2C976 /* AddChildVC.swift */; };
 		DDDA5CFA272B5E42003CE2B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA5CF9272B5E42003CE2B3 /* AppDelegate.swift */; };
 		DDDA5CFC272B5E42003CE2B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA5CFB272B5E42003CE2B3 /* SceneDelegate.swift */; };
 		DDDA5D03272B5E43003CE2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDA5D02272B5E43003CE2B3 /* Assets.xcassets */; };
@@ -46,6 +51,11 @@
 		DDA2E557274370C100989166 /* WishListAndLettersCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAndLettersCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDD4DF86274C230200A2C976 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		DDD4DF89274C2C1100A2C976 /* SantaIWishModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SantaIWishModel.xcdatamodel; sourceTree = "<group>"; };
+		DDD4DF8C274C387B00A2C976 /* Child+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+Convenience.swift"; sourceTree = "<group>"; };
+		DDD4DF8E274C389100A2C976 /* Parent+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parent+Convenience.swift"; sourceTree = "<group>"; };
+		DDD4DF91274C38D700A2C976 /* Child+Representation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+Representation.swift"; sourceTree = "<group>"; };
+		DDD4DF93274C3B1B00A2C976 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DDD4DF95274C5D7700A2C976 /* AddChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildVC.swift; sourceTree = "<group>"; };
 		DDDA5CF6272B5E42003CE2B3 /* Santa I Wish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Santa I Wish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDA5CF9272B5E42003CE2B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDA5CFB272B5E42003CE2B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,9 +102,21 @@
 		DDD4DF8B274C2C1900A2C976 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				DDD4DF90274C38C100A2C976 /* Child Models */,
 				DDD4DF88274C2C1100A2C976 /* SantaIWishModel.xcdatamodeld */,
+				DDD4DF8E274C389100A2C976 /* Parent+Convenience.swift */,
+				DDD4DF93274C3B1B00A2C976 /* CoreDataStack.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DDD4DF90274C38C100A2C976 /* Child Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDD4DF8C274C387B00A2C976 /* Child+Convenience.swift */,
+				DDD4DF91274C38D700A2C976 /* Child+Representation.swift */,
+			);
+			path = "Child Models";
 			sourceTree = "<group>";
 		};
 		DDDA5CED272B5E42003CE2B3 = {
@@ -149,6 +171,7 @@
 				DD468C5427432B87003BC235 /* ChildCell.swift */,
 				DDA2E557274370C100989166 /* WishListAndLettersCellCollectionViewCell.swift */,
 				DDD4DF86274C230200A2C976 /* SettingsVC.swift */,
+				DDD4DF95274C5D7700A2C976 /* AddChildVC.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -287,11 +310,16 @@
 				DDDA5CFA272B5E42003CE2B3 /* AppDelegate.swift in Sources */,
 				DDDA5D27272C3DE9003CE2B3 /* LettersTVC.swift in Sources */,
 				DDDA5D34272C44EC003CE2B3 /* LoginPopupView.swift in Sources */,
+				DDD4DF92274C38D700A2C976 /* Child+Representation.swift in Sources */,
 				DDA2E558274370C100989166 /* WishListAndLettersCellCollectionViewCell.swift in Sources */,
 				DDDA5D21272C3DAC003CE2B3 /* HomescreenVC.swift in Sources */,
 				DDDA5D2E272C3E62003CE2B3 /* ProfileImageView.swift in Sources */,
+				DDD4DF96274C5D7700A2C976 /* AddChildVC.swift in Sources */,
 				DD468C5527432B87003BC235 /* ChildCell.swift in Sources */,
 				DDDA5D1B272C3D80003CE2B3 /* LoginVC.swift in Sources */,
+				DDD4DF8F274C389100A2C976 /* Parent+Convenience.swift in Sources */,
+				DDD4DF94274C3B1B00A2C976 /* CoreDataStack.swift in Sources */,
+				DDD4DF8D274C387B00A2C976 /* Child+Convenience.swift in Sources */,
 				DD79BB2327330A7000DDDD28 /* FirebaseManagerAPI.swift in Sources */,
 				DDDA5CFC272B5E42003CE2B3 /* SceneDelegate.swift in Sources */,
 				DDD4DF87274C230200A2C976 /* SettingsVC.swift in Sources */,
