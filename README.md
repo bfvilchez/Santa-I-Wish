@@ -5,7 +5,6 @@ This project is an redesign of the original project
 Reason for redesign: 
   - firebase unfortunately does not work properly, some data does get posted on to the database while other data does not. 
   - CoreData slows down the project especially after mutliple child objects are created. 
-  - Publish on app store. 
   
 Original Source Code https://github.com/kima-92/ios-build-sprint-project-proposal/tree/Develop
 
