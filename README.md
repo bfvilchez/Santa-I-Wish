@@ -1,8 +1,8 @@
 # Santa-I-Wish
 
-This project is an redesign of the original project
+This project is an rebuild of the original project
 
-Reason for redesign: 
+Reason for rebuild: 
   - firebase unfortunately does not work properly, some data does get posted on to the database while other data does not. 
   - CoreData slows down the project especially after mutliple child objects are created. 
   
